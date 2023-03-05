@@ -8,7 +8,7 @@ export default function NavBar() {
     <Navbar bg="light" expand="lg">
       <Container>
         <Link to="/">
-          <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand>ZenCart</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
