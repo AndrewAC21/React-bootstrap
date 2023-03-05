@@ -2,15 +2,15 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import CartSvg from "./CartSvg";
 
-export default function Product() {
+export default function Product({ product }) {
   return (
     <Card>
-      <Card.Img src="https://picsum.photos/200" alt="" className="product-img" />
+      <Card.Img src={product.image} alt="" className="product-img" />
       <Card.Body>
-        <Card.Title>Mueble blanco</Card.Title>
-        <Card.Text>$120,00</Card.Text>
+        <Card.Title>{product.title}</Card.Title>
+        <Card.Text>${product.price}</Card.Text>
         <div className="product__svg">
-       <CartSvg/> 
+          <CartSvg />
         </div>
       </Card.Body>
     </Card>
