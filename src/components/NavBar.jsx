@@ -12,7 +12,7 @@ export default function NavBar() {
               src="https://img.freepik.com/iconos-gratis/carrito-compras_318-661842.jpg?w=2000"
               width="30"
               height="30"
-              className="d-inline-block align-top me-2"
+              className="d-inline-block align-top me-3"
               alt="React Bootstrap logo"
             />
           <Navbar.Brand className="navbar-style__text">ZenCart</Navbar.Brand>
