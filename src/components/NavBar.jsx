@@ -5,22 +5,29 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function NavBar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" className="navbar-style--bg-color">
       <Container>
-        <Link to="/">
-          <Navbar.Brand>ZenCart</Navbar.Brand>
+        <Link to="/" className="navbar-style__link">
+            <img
+              src="https://img.freepik.com/iconos-gratis/carrito-compras_318-661842.jpg?w=2000"
+              width="30"
+              height="30"
+              className="d-inline-block align-top me-2"
+              alt="React Bootstrap logo"
+            />
+          <Navbar.Brand className="navbar-style__text">ZenCart</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Link to="/">
-              <Nav.Link>Home</Nav.Link>
+              <Nav.Link className="navbar-style__text">Home</Nav.Link>
             </Link>
             <Link to="/login">
-              <Nav.Link href="#link">Log in</Nav.Link>
+              <Nav.Link className="navbar-style__text">Log in</Nav.Link>
             </Link>
             <Link to="register">
-              <Nav.Link>Register</Nav.Link>
+              <Nav.Link className="navbar-style__text">Register</Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>
