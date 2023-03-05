@@ -1,0 +1,43 @@
+.product {
+  
+  &__img-container {
+    display:flex;
+    justify-content: center;
+    height: 50%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  &__img {
+    object-fit: cover;
+    width:50%;
+    align-self: center;
+  }
+  &__info{
+    display: flex;
+    height: 50%
+  }}
+
+  .product__sub-info {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    height:50%;
+  }
+
+  .sub-info {
+    &__svg {
+    margin-right: 1rem;
+  
+  }
+
+  &__svg:hover {
+    cursor: pointer;
+    transform: scale(1.5); 
+    }
+  }
+.product:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    outline: solid 2px #708090;
+  }
