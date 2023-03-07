@@ -1,20 +1,21 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 export default function NavBar() {
+  let [location, setLocation] = useLocation();
   return (
     <Navbar expand="lg" className="navbar-style--bg-color">
       <Container>
         <Link to="/" className="navbar-style__link">
-            <img
-              src="https://img.freepik.com/iconos-gratis/carrito-compras_318-661842.jpg?w=2000"
-              width="30"
-              height="30"
-              className="d-inline-block align-top me-3"
-              alt="React Bootstrap logo"
-            />
+          <img
+            src="https://img.freepik.com/iconos-gratis/carrito-compras_318-661842.jpg?w=2000"
+            width="30"
+            height="30"
+            className="d-inline-block align-top me-3"
+            alt="React Bootstrap logo"
+          />
           <Navbar.Brand className="navbar-style__text">ZenCart</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,7 +27,7 @@ export default function NavBar() {
             <Link to="/login">
               <Nav.Link className="navbar-style__text">Log in</Nav.Link>
             </Link>
-            <Link to="register">
+            <Link to="/register">
               <Nav.Link className="navbar-style__text">Register</Nav.Link>
             </Link>
           </Nav>
