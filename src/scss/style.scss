@@ -6,8 +6,14 @@ $sm: 14px;
 $md: 16px;
 $lg: 18px;
 
+html {
+  padding: 0;
+  margin: 0;
+}
+
 @import "./main-page";
 @import "./forms";
 @import "~bootstrap/scss/bootstrap";
 @import "./navbar";
-@import "./product"
+@import "./product";
+@import "./footer"
