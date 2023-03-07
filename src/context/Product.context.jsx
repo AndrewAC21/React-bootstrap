@@ -1,11 +1,10 @@
-import {useState, useEffect, createContext } from 'react'
+import { useState, useEffect, createContext } from "react";
 
 import { getProducts } from "../services/fetchProducts";
 
+export const ProductContext = createContext();
 
-const ProductContext = createContext()
-
-function ProductProvider({children}){
+export function ProductProvider({ children }) {
   let [products, setProducts] = useState([]);
   let [isLoading, setIsLoading] = useState(true);
 
@@ -13,15 +12,14 @@ function ProductProvider({children}){
     async function fetchData() {
       const data = await getProducts();
       setProducts(data);
+      console.log("setProducts");
       setIsLoading(false);
     }
     fetchData();
   }, []);
   return (
-    <ProductContext.Provider value={{products, isLoading}}>
+    <ProductContext.Provider value={{ products, isLoading }}>
       {children}
-    </ ProductContext.Provider>
-  )
+    </ProductContext.Provider>
+  );
 }
-
-export {ProductContext, ProductProvider}
