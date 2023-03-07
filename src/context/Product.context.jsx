@@ -12,7 +12,6 @@ export function ProductProvider({ children }) {
     async function fetchData() {
       const data = await getProducts();
       setProducts(data);
-      console.log("setProducts");
       setIsLoading(false);
     }
     fetchData();

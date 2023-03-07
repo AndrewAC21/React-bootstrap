@@ -1,7 +1,6 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 
 export default function ProductDisplay({ product }) {
-  console.log("product", product);
   const { id, title, price, category, description, image } = product[0];
 
   return (
