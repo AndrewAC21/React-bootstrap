@@ -1,10 +1,9 @@
-import { Link, useLocation } from "wouter";
+import { Link } from "wouter";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 export default function NavBar() {
-  let [location, setLocation] = useLocation();
   return (
     <Navbar expand="lg" className="navbar-style--bg-color">
       <Container>
