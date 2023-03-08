@@ -15,14 +15,14 @@ function App() {
     <>
       <NavBar />
       <ProductProvider>
-        <Route path="/" component={Home} />
-        <Route path="/products/:id">
+        <Route path="/zencart" component={Home} />
+        <Route path="/zencart/products/:id">
           {(params) => <ProductPage productId={params.id} />}
         </Route>
       </ProductProvider>
 
-      <Route path="/login" component={LogIn} />
-      <Route path="/register" component={Register} />
+      <Route path="/zencart/login" component={LogIn} />
+      <Route path="/zencart/register" component={Register} />
       <Footer />
     </>
   );

@@ -10,9 +10,13 @@ export function ProductProvider({ children }) {
 
   useEffect(() => {
     async function fetchData() {
-      const data = await getProducts();
-      setProducts(data);
-      setIsLoading(false);
+      try {
+        const data = await getProducts();
+        setProducts(data);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error);
+      }
     }
     fetchData();
   }, []);

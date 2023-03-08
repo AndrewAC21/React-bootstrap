@@ -10,7 +10,7 @@ export default function Product({ product }) {
 
   return (
     <Card className="product">
-      <Link to={`/products/${product.id}`}>
+      <Link to={`/zencart/products/${product.id}`}>
         <div className="product__img-container">
           <Card.Img src={product.image} alt="" className="product__img" />
         </div>
